@@ -11,28 +11,44 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="/styles.css"/>
+    <link rel="stylesheet" href="/styles.css" />
 
-    <title>Frontend Mentor | Interactive rating component</title>
+    <title>Interactive rating component</title>
   </head>
   <body>
-
     <div class="card-container">
       <div class="content-container">
-        <div class="star"><img src="/images/icon-star.svg"/></div>
-        <h3 class="heading">How did we do?</h3>
-        <p class="para">Please let us know how we did with your support request.All feedback is appreciated to help us improve our offering!</p>
-      <div class="rating" id="select-rating" value="none">
-        <button class="rating-btn" id="rating-btn-1" value="1">1</button>
-        <button class="rating-btn" id="rating-btn-2" value="2">2</button>
-        <button class="rating-btn" id="rating-btn-3" value="3">3</button>
-        <button class="rating-btn" id="rating-btn-4" value="4">4</button>
-        <button class="rating-btn" id="rating-btn-5" value="5">5</button>
-      </div>
-      <button class="submit-btn" id="submit-btn">Submit</button>
-      </div> 
-    </div>
+        <div class="form-card">
+          <div class="star"><img src="/images/icon-star.svg" /></div>
+          <h3 class="heading">How did we do?</h3>
+          <p class="para">
+            Please let us know how we did with your support request.All feedback
+            is appreciated to help us improve our offering!
+          </p>
+          <form class="rating" id="select-rating" value="">
+            <input type="button" class="rating-btn" id="rating-btn-1" value="1" />
+            <input type="button" class="rating-btn" id="rating-btn-2" value="2" />
+            <input type="button" class="rating-btn" id="rating-btn-3" value="3" />
+            <input type="button" class="rating-btn" id="rating-btn-4" value="4" />
+            <input type="button" class="rating-btn" id="rating-btn-5" value="5" />
+          </form>
+          <span class="error-message"></span>
+          <button class="submit-btn" id="submit-btn">Submit</button>
+        </div>
 
+        <div class="thank-you-card">
+          <img src="images/illustration-thank-you.svg" alt="thank-you" />
+
+          <span class="rating-details">You selected 4 out of 5</span>
+
+          <h3 class="heading">Thank You!</h3>
+          <p class="para">
+            We appreciate you taking the time to give a raating. if you ever
+            need more support, don't hesitate to get in touch.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <script src="/script.js"></script>
   </body>

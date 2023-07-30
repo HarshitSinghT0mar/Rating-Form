@@ -36,12 +36,32 @@ body{
 gap: 1rem;
     
 }
-.content-container{
+.form-card{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 14rem;
-    height: 14rem ;
+}
+
+.thank-you-card{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+.thank-you-card img{
+    width: 10rem;
+    height: 5rem;
+    object-fit: contain;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+ 
+    width: 15rem;
+    height: 15rem ;
     border: 1px solid none;
     background: linear-gradient(var(--clr-dark-blue),var(--clr-dark-blue));
     padding: 1.5rem;
@@ -63,6 +83,20 @@ align-items: center;
    background-color: var(--clr-extra-dark-blue);
    align-self: flex-start;
 }
+.rating-details{
+    font-size: 10px;
+    color: var(--clr--orange);
+    border: 1px solid var(--clr--orange);
+    background: var(--clr-dark-blue);
+    padding: 2px 6px;
+    border-radius: 4rem;
+    
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+}
 
 .rating-btn{
     border-radius: 50%;
@@ -73,12 +107,17 @@ align-items: center;
   font-weight: lighter;
   border: none;
     background: var(--clr-extra-dark-blue);
-    
+    transition: all 0.3s;
 }
 .rating-btn:hover{
     background-color: var(--clr--orange);
     color: var(--clr-white)
     
+}
+
+.rating-btn-active{
+    background-color: var(--clr--orange);
+    color: var(--clr-white)
 }
 
 .submit-btn{
@@ -88,4 +127,18 @@ align-items: center;
     padding: 6px 10px;
     border-radius: 1rem;
     cursor: pointer;
+margin-top: 8px;
+transition: 0.3s;
+}
+
+.submit-btn:hover{
+    background-color: var(--clr-white);
+    color: var(--clr--orange);
+}
+.error-message{
+    font-size: 12px;
+    color: red;
+    align-self: center;
+
+
 }
