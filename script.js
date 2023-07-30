@@ -8,8 +8,8 @@ const errorMessage=document.querySelector(".error-message")
 
 let rating;
 
-thankYouCard.style.display = "none";
-errorMessage.style.display="none"
+// thankYouCard.style.display = "none";
+// errorMessage.style.display="none"
 
 ratingBtnContainer.onclick=(e)=>{
     e.preventDefault();
